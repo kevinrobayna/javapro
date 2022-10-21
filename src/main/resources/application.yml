@@ -11,3 +11,10 @@ netty:
   default:
     allocator:
       max-order: 3
+
+liquibase:
+  enabled: true
+  datasources:
+    default:
+      enabled: true
+      change-log: 'classpath:db/liquibase-changelog.xml' # <4>

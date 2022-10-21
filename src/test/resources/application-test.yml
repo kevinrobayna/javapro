@@ -1,4 +1,10 @@
 datasources:
   default:
-    url: jdbc:tc:postgresql:12:///postgres
+    url: jdbc:tc:postgresql:latest:///postgres
     driverClassName: org.testcontainers.jdbc.ContainerDatabaseDriver
+
+liquibase:
+  enabled: true
+  datasources:
+    default:
+      enabled: true
